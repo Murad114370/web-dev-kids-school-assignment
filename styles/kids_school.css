@@ -243,10 +243,7 @@
 }
 .footer-head{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-    
-      
+    grid-template-columns: repeat(3, 1fr);     
 }
 .footer-subhead1{
     margin: 100px 280px 180px 147px;
@@ -285,4 +282,134 @@
     color: white;
     font-size: 1.5rem;
     font-weight: 600;
+}
+/* Hamburger Menu Styling */
+.hamburger-menu {
+    display: none; 
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .hamburger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+  }
+
+/* responsive media query */
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+       
+      }
+      .nav-links.active {
+        display: flex; 
+      }
+    
+      .hamburger-menu {
+        display: flex; 
+      }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .nav-heading {
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    display: none; /* Hidden by default for mobile */
+    width: 100%;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .nav-links.active {
+    display: flex; /* Show when toggled */
+  }
+
+  .nav-link {
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  .primary-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Banner Section */
+  .banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .banner-content {
+    margin-bottom: 20px;
+  }
+
+  .banner-title {
+    font-size: 1.5rem;
+  }
+
+  .banner-description {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+
+  .btn-secondary {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .banner-img {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  /* section2 */
+
+    .section1-subhead{
+        flex-direction: column;
+        gap:0px;
+       
+    }
+    /* footer section */
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+      }
+    
+      .footer-head {
+        flex-direction: column;
+        gap: 20px;
+      }
+    
+      .footer-subhead1,
+      .footer-subhead2,
+      .footer-subhead3 {
+        margin: 10px 0;
+      }
+    
+      .footer-subhead2 .about h6 {
+        margin: 5px 0;
+      }
+    
+      .footer-subhead3 img {
+        margin: 0 10px;
+      }
+    
 }
